@@ -1,0 +1,17 @@
+名稱： CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      運行： echo您好，世界！
+    -名稱：運行多行腳本
+      運行：|
+        echo Add other actions to build,
+        echo test, and deploy your project.
